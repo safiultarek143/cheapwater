@@ -136,6 +136,14 @@
                                     <p>Product images</p>
                                 </a>
                             </li>
+                            <li class="nav-item has-treeview">
+                                <a href="{{ route('orders.index') }}" class="nav-link">
+                                    <i class="nav-icon far fa-file-word"></i>
+                                    <p>
+                                        Orders
+                                    </p>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -246,6 +254,13 @@
             "autoWidth": false,
         });
     });
+</script>
+<script>
+$("billtoship").click(function(){
+    if(this.checked){
+        $("#shipping_name").val($("#billing_name").val());
+    }
+}
 </script>
 </body>
 </html>

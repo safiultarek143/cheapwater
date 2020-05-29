@@ -1,11 +1,9 @@
 @extends('layouts.frontend')
 @section('contents')
+    @include('includes.flash_message')
 
-    <!-- Start Main Banner -->
+    @include('.frontend.nav')
 
-    <!-- End Main Banner -->
-    @include('frontend.nav')
-    <!-- Start Welcome Area -->
     @include('frontend.home')
 
     @include('frontend.hot_deal')
@@ -13,8 +11,6 @@
     @include('frontend.new_collection')
 
     @include('frontend.latest_product')
-
-
 
 
 @stop

@@ -7,9 +7,9 @@
             <div id="home-slick">
                 <!-- banner -->
                 <div class="banner banner-1">
-                    <img src="{{asset('assets/img/banner01.jpg')}}" alt="">
+                    <img src="{{asset('assets/img/free-delivary.jpg')}}" alt="">
                     <div class="banner-caption text-center">
-                        <h1>Bags sale</h1>
+                        <h1>Bacteriostatic Water, 30mL</h1>
                         <h3 class="white-color font-weak">Up to 50% Discount</h3>
                         <button class="primary-btn">Shop Now</button>
                     </div>
@@ -18,7 +18,7 @@
 
                 <!-- banner -->
                 <div class="banner banner-1">
-                    <img src="{{asset('assets/img/banner02.jpg')}}" alt="">
+                    <img src="{{asset('assets/img/bacteriostaticwater_10.jpg')}}" alt="">
                     <div class="banner-caption">
                         <h1 class="primary-color">HOT DEAL<br><span class="white-color font-weak">Up to 50% OFF</span></h1>
                         <button class="primary-btn">Shop Now</button>
@@ -28,7 +28,7 @@
 
                 <!-- banner -->
                 <div class="banner banner-1">
-                    <img src="{{asset('assets/img/banner03.jpg')}}" alt="">
+                    <img src="{{asset('assets/img/25.jpg')}}" alt="">
                     <div class="banner-caption">
                         <h1 class="white-color">New Product <span>Collection</span></h1>
                         <button class="primary-btn">Shop Now</button>

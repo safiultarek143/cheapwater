@@ -14,6 +14,7 @@
 
     <!-- Bootstrap -->
     <link type="text/css" rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}" />
+    <link type="text/css" rel="stylesheet" href="{{asset('custom/custom.css')}}" />
 
     <!-- Slick -->
     <link type="text/css" rel="stylesheet" href="{{asset('assets/css/slick.css')}}" />
@@ -44,10 +45,34 @@
 
 <!-- Start Main Header Area -->
 @include('frontend.header')
+
 <!-- End Main Header Area -->
 
 @yield('contents')
 
+<!-- Logout Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-primary" href="{{route('logout')}}"
+                   onclick="event.preventDefault(); document.getElementById('logout_form').submit()">Logout</a>
+                <form id="logout_form" action="{{route('logout')}}" method="post">
+                    @csrf
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Start Footer Area -->
 @include('frontend.footer')
 
@@ -59,6 +84,7 @@
 <script src="{{asset('assets/js/nouislider.min.js')}}"></script>
 <script src="{{asset('assets/js/jquery.zoom.min.js')}}"></script>
 <script src="{{asset('assets/js/main.js')}}"></script>
+@stack('custom_js')
 
 </body>
 

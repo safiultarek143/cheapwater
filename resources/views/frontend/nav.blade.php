@@ -15,10 +15,7 @@
                                         <li>
                                             <h3 class="list-links-title">Categories</h3></li>
                                         <li><a href="#">Women’s Clothing</a></li>
-                                        <li><a href="#">Men’s Clothing</a></li>
-                                        <li><a href="#">Phones & Accessories</a></li>
-                                        <li><a href="#">Jewelry & Watches</a></li>
-                                        <li><a href="#">Bags & Shoes</a></li>
+
                                     </ul>
                                     <hr class="hidden-md hidden-lg">
                                 </div>
@@ -26,11 +23,6 @@
                                     <ul class="list-links">
                                         <li>
                                             <h3 class="list-links-title">Categories</h3></li>
-                                        <li><a href="#">Women’s Clothing</a></li>
-                                        <li><a href="#">Men’s Clothing</a></li>
-                                        <li><a href="#">Phones & Accessories</a></li>
-                                        <li><a href="#">Jewelry & Watches</a></li>
-                                        <li><a href="#">Bags & Shoes</a></li>
                                     </ul>
                                     <hr class="hidden-md hidden-lg">
                                 </div>
@@ -38,11 +30,6 @@
                                     <ul class="list-links">
                                         <li>
                                             <h3 class="list-links-title">Categories</h3></li>
-                                        <li><a href="#">Women’s Clothing</a></li>
-                                        <li><a href="#">Men’s Clothing</a></li>
-                                        <li><a href="#">Phones & Accessories</a></li>
-                                        <li><a href="#">Jewelry & Watches</a></li>
-                                        <li><a href="#">Bags & Shoes</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -203,7 +190,7 @@
                 <span class="menu-header">Menu <i class="fa fa-bars"></i></span>
                 <ul class="menu-list">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
+                    <li><a href="{{ route('shop') }}">Shop</a></li>
                     <li class="dropdown mega-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Women <i class="fa fa-caret-down"></i></a>
                         <div class="custom-menu">
                             <div class="row">
