@@ -68,7 +68,7 @@ class CheckoutController extends Controller
         $exp_month = $request->exp_month;
         $exp_year = $request->exp_year;
         $expiration_date = $exp_year.'-'.$exp_month;
-        $amount = \Cart::getTotal();
+        $amount = \Cart::getTotal() + $request->shipping;
 
         $charge_card = $this->chargeCreditCard($card_number, $cvv, $expiration_date, $amount);
         if ($charge_card['success']) {
@@ -117,7 +117,7 @@ class CheckoutController extends Controller
         $payment = new Payment();
         $payment->payment_method = $request->payment_method;
         $payment->transaction_id = $trans_id;
-        $payment->amount = \Cart::getTotal();
+        $payment->amount = \Cart::getTotal() + $request->shipping;
         $payment->payment_status = $payment_status;
         $payment->save();
 

@@ -191,14 +191,14 @@
                             <tr>
                                 <th class="empty" colspan="3"></th>
                                 <th>SHIPING</th>
-                                <td colspan="2"><input type="radio" name="shipping" value="" id="payments-1" checked>&nbsp;Free shipping</td>
-                                <td colspan="2"><input type="radio" name="shipping" value="45" id="payments-1" >&nbsp;Overnight Shipping</td>
-                                <td colspan="2"><input type="radio" name="shipping" value="20" id="payments-1" >&nbsp;2 days Shipping</td>
+                                <td colspan="2"><input type="radio" class="shipping" name="shipping" value="0" id="free" checked>&nbsp;Free shipping</td>
+                                <td colspan="2"><input type="radio" class="shipping" name="shipping" value="45" id="over-night" >&nbsp;Overnight Shipping</td>
+                                <td colspan="2"><input type="radio" class="shipping" name="shipping" value="20" id="payments-1" >&nbsp;2 days Shipping</td>
                             </tr>
                             <tr>
                                 <th class="empty" colspan="3"></th>
                                 <th>TOTAL</th>
-                                <th colspan="2" class="total">${{ \Cart::getTotal() }}</th>
+                                <th colspan="2" class="total">$<span id="total" data-total="{{ \Cart::getTotal() }}">{{ \Cart::getTotal() }}</span></th>
                             </tr>
                             </tfoot>
                         </table>
@@ -226,6 +226,12 @@
            }
 
         }
+        $('.shipping').on("click",function () {
+
+            let shipping_cost = parseFloat($(this).val());
+            let total = parseFloat($("#total").data("total"));
+            $("#total").text(total+shipping_cost);
+        })
     </script>
 @endpush
 
