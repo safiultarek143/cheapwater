@@ -1,5 +1,5 @@
 @extends('layouts.frontend')
-
+@section('contents')
     <!DOCTYPE html>
 <html lang="en">
 <!-- section -->
@@ -16,30 +16,9 @@
                         <div class="product-view">
                             <img src="{{ $product->image_url }}" alt="">
                         </div>
-                        <div class="product-view">
-                            <img src="./img/main-product02.jpg" alt="">
-                        </div>
-                        <div class="product-view">
-                            <img src="./img/main-product03.jpg" alt="">
-                        </div>
-                        <div class="product-view">
-                            <img src="./img/main-product04.jpg" alt="">
-                        </div>
+
                     </div>
-                    <div id="product-view">
-                        <div class="product-view">
-                            <img src="./img/thumb-product01.jpg" alt="">
-                        </div>
-                        <div class="product-view">
-                            <img src="./img/thumb-product02.jpg" alt="">
-                        </div>
-                        <div class="product-view">
-                            <img src="./img/thumb-product03.jpg" alt="">
-                        </div>
-                        <div class="product-view">
-                            <img src="./img/thumb-product04.jpg" alt="">
-                        </div>
-                    </div>
+
                 </div>
                 <div class="col-md-6">
                     <div class="product-body">
@@ -47,7 +26,7 @@
                             <span>New</span>
                             <span class="sale">-20%</span>
                         </div>
-                        <h2 class="product-name">Product Name Goes Here</h2>
+                        <h2 class="product-name">{{ $product->title }}</h2>
                         <h3 class="product-price">${{ $product->price }}<del class="product-old-price">$45.00</del></h3>
                         <div>
                             <div class="product-rating">
@@ -63,21 +42,6 @@
                         <p><strong>Brand:</strong> E-SHOP</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                             dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <div class="product-options">
-                            <ul class="size-option">
-                                <li><span class="text-uppercase">Size:</span></li>
-                                <li class="active"><a href="#">S</a></li>
-                                <li><a href="#">XL</a></li>
-                                <li><a href="#">SL</a></li>
-                            </ul>
-                            <ul class="color-option">
-                                <li><span class="text-uppercase">Color:</span></li>
-                                <li class="active"><a href="#" style="background-color:#475984;"></a></li>
-                                <li><a href="#" style="background-color:#8A2454;"></a></li>
-                                <li><a href="#" style="background-color:#BF6989;"></a></li>
-                                <li><a href="#" style="background-color:#9A54D8;"></a></li>
-                            </ul>
-                        </div>
 
                         <div class="product-btns">
                             <div class="qty-input">
@@ -361,4 +325,4 @@
 </body>
 
 </html>
-
+@endsection

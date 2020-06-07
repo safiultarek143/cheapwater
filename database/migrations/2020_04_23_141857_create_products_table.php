@@ -20,8 +20,7 @@ class CreateProductsTable extends Migration
             $table->string('slug');
             $table->longText('description');
             $table->integer('price');
-            $table->integer('quantity')->default(1);
-            $table->integer('size');
+            $table->integer('quantity')->default(0);
             $table->string('image')->nullable();
             $table->tinyInteger('status')->default(0);
             $table->timestamps();

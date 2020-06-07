@@ -30,4 +30,9 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'authorize' => [
+        'user' => env('AUTHORIZE_USER'),
+        'key' => env('AUTHORIZE_KEY'),
+    ],
+
 ];

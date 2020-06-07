@@ -14,6 +14,7 @@
 
             <!-- Product Single -->
             @foreach($products as $product)
+
             <div class="col-md-3 col-sm-6 col-xs-6">
                 <div class="product product-single">
                     <div class="product-thumb">
@@ -33,12 +34,25 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-o empty"></i>
                         </div>
+
                         <h2 class="product-name"><a href="{{ route('product.single',$product->slug) }}">{{ $product->title }}</a></h2>
-                        <div class="product-btns">
-                            <button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
-                            <button class="main-btn icon-btn"><i class="fa fa-exchange"></i></button>
-                            <button class="primary-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
-                        </div>
+                        <form action="{{ route('cart.store') }}" method="POST">
+                            @csrf
+                            <input type="hidden" value="{{ $product->id }}" id="id" name="id">
+                            <input type="hidden" value="{{ $product->title }}" id="name" name="name">
+                            <input type="hidden" value="{{ $product->price }}" id="price" name="price">
+                            <input type="hidden" value="{{ $product->quantity }}" id="price" name="price">
+                            <input type="hidden" value="{{ $product->image_url }}" id="img" name="img">
+                            <input type="hidden" value="{{ $product->slug }}" id="slug" name="slug">
+                            <input type="hidden" value="1" id="quantity" name="quantity">
+                            <div class="card-footer" style="background-color: white;">
+                                <div class="product-btns">
+                                    <button class="primary-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                                </div>
+                            </div>
+
+                        </form>
+
                     </div>
                 </div>
             </div>

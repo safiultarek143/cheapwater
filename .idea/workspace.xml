@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3dadec78-5f12-4943-9b05-6c473b32e041" name="Default Changelist" comment="" />
+    <list default="true" id="3dadec78-5f12-4943-9b05-6c473b32e041" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/checkout.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,12 +12,10 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="cheap-water" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -113,21 +114,30 @@
       <path value="$PROJECT_DIR$/vendor/brick/math" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/darryldecode/cart" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/authorizenet/authorizenet" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ahXGk1UWj0Sb2gEbBxRnRX8r6a" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/traits" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\cheap-water\app\traits" />
       <recent name="C:\xampp\htdocs\cheap-water\resources\views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -140,18 +150,6 @@
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -176,37 +174,66 @@
       <workItem from="1587872334096" duration="27109000" />
       <workItem from="1587958333802" duration="19930000" />
       <workItem from="1588217891779" duration="21060000" />
-      <workItem from="1588338745038" duration="6391000" />
+      <workItem from="1588338745038" duration="26603000" />
+      <workItem from="1588476375394" duration="12692000" />
+      <workItem from="1588562882707" duration="15622000" />
+      <workItem from="1588601090738" duration="3055000" />
+      <workItem from="1588651104037" duration="6102000" />
+      <workItem from="1588669573565" duration="10073000" />
+      <workItem from="1588736349940" duration="27088000" />
+      <workItem from="1588830951025" duration="35130000" />
+      <workItem from="1589858916739" duration="12352000" />
+      <workItem from="1589944674957" duration="49651000" />
+      <workItem from="1590642710587" duration="27521000" />
+      <workItem from="1590815413663" duration="23714000" />
+      <workItem from="1590943584992" duration="1766000" />
+      <workItem from="1590945443774" duration="277000" />
+      <workItem from="1590990618591" duration="1777000" />
+      <workItem from="1590993476211" duration="25014000" />
+      <workItem from="1591074096045" duration="24484000" />
+      <workItem from="1591160969417" duration="12438000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="159" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588340607326">
+    <state x="415" y="144" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589956915827">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="159" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1588340607326" />
-    <state x="371" y="97" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1588343692639">
+    <state x="415" y="144" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1589956915827" />
+    <state x="159" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590566947668">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="97" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1588343692639" />
-    <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1587557450549">
+    <state x="159" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1590566947668" />
+    <state x="371" y="97" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1590945350448">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1587557450549" />
-    <state x="398" y="156" key="NewPhpClassDialog" timestamp="1588243397379">
+    <state x="371" y="97" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1590945350448" />
+    <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1590831409046">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="398" y="156" key="NewPhpClassDialog/0.0.1280.680@0.0.1280.680" timestamp="1588243397379" />
-    <state x="477" y="265" key="NewPhpFileDialog" timestamp="1588343018319">
+    <state x="421" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1590831409046" />
+    <state x="398" y="156" key="NewPhpClassDialog" timestamp="1590556961438">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="477" y="265" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1588343018319" />
+    <state x="398" y="156" key="NewPhpClassDialog/0.0.1280.680@0.0.1280.680" timestamp="1590556961438" />
+    <state x="513" y="329" key="NewPhpFileDialog" timestamp="1591088162173">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="513" y="329" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1591088162173" />
+    <state x="153" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1590573903184">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="153" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.680@0.0.1280.680" timestamp="1590573903184" />
     <state x="93" y="93" width="1095" height="495" key="dock-window-1" timestamp="1587472487200">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="93" y="93" width="1095" height="495" key="dock-window-1/0.0.1280.680@0.0.1280.680" timestamp="1587472487200" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1588748747822">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1588748747822" />
   </component>
 </project>

@@ -13,26 +13,56 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
-Route::get('/', 'HomeController@index');
-Route::get('/product/{slug}','HomeController@singleProduct')->name('product.single');
-Route::get('/admin', function () {
-    return view('layouts.admin');
-});
 
+Route::get('/', 'HomeController@index')->name('home');
+//Route::get('/user', 'HomeController@userIndex')->name('userPanel');
+Route::get('/admin', 'HomeController@adminIndex');
+Route::get('/home', 'HomeController@frontIndex');
+Route::get('/product/{slug}','HomeController@singleProduct')->name('product.single');
+Route::get('/shop', 'CartController@shop')->name('shop');
+Route::get('/checkout', 'CartController@checkout')->name('checkout');
+Route::get('/cart', 'CartController@cart')->name('cart.index');
+Route::post('/add', 'CartController@add')->name('cart.store');
+Route::post('/update', 'CartController@update')->name('cart.update');
+Route::post('/remove', 'CartController@remove')->name('cart.remove');
+Route::post('/clear', 'CartController@clear')->name('cart.clear');
+Route::get('/account/login', 'CheckoutController@loginForm')->name('customer.login_form');
+Route::post('/customer/login', 'CheckoutController@customerLogin')->name('customer.login');
+Route::post('/customer/register', 'CheckoutController@customerRegister')->name('customer.register');
+Route::get('/customer/logout', 'CheckoutController@customerLogout')->name('customer.logout');
+Route::post('/order-place', 'CheckoutController@orderPlace')->name('order.place');
 Auth::routes();
 
-
-
 Route::group(['prefix' => 'admin','namespace' => 'Admin','middleware' => 'auth'],function (){
-//    Route::get('/home', 'HomeController@index')->name('home');
+
     Route::resource('categories', 'ProductCategoryController')->except(['create','show']);
     Route::resource('products', 'ProductsController');
-    Route::resource('order', 'ProductsController');
+    Route::resource('orders', 'OrderController');
 
 
 });
+//Route::group(['prefix' => 'user','namespace' => 'Admin','middleware' => 'auth'],function (){
+//
+//    Route::resource('address', 'UserController')->except(['create','show']);
+//    Route::resource('account', 'UserController');
+//    Route::resource('orders', 'UserController');
+//
+//
+//});
+Route::get('/token/{id}', 'VerificationController@verify')->name('user.activation');
+Route::get('/dashboard', 'CustomerController@dashboard')->name('user.dashboard');
+Route::get('/address', 'CustomerController@address')->name('user.address');
+Route::get('/address/billing/{id}', 'CustomerController@editBillingAddress')->name('userBilling.address');
+Route::get('/address/shipping/{id}', 'CustomerController@editShippingAddress')->name('userShipping.address');
+Route::post('/address/billing-update/{id}', 'CustomerController@updateBillingAddress')->name('userBilling.updateAddress');
+Route::post('/address/shipping-update/{id}', 'CustomerController@updateShippingAddress')->name('userShipping.updateAddress');
+Route::get('/user-account/{id}', 'CustomerController@userAccount')->name('user.userAccount');
+Route::get('/user-orders', 'CustomerController@userOrders')->name('user.userOrders');
+Route::get('/user-orders-show/{id}', 'CustomerController@userOrdershow')->name('user.orderShow');
+Route::post('/profile/update/{id}', 'CustomerController@profileUpdate')->name('userAccount.update');
+Route::get('/user', 'CustomerController@userIndex')->name('userPanel')->middleware('customAuth');
 
+//Route::group(['middleware'=>['customAuth']],function(){
+//    Route::get('/user', 'CustomerController@userIndex')->name('userPanel');
+//})
 
